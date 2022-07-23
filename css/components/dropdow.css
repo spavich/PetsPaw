@@ -1,0 +1,71 @@
+.dropdown {
+	width: 100%;
+	position: relative;
+}
+.dropdown__button {
+	position: relative;
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	text-align: left;
+	color: #8C8C8C;
+	background: #F8F8F7;
+	border-radius: 10px;
+	border: 2px solid #F8F8F7;
+	height: 40px;
+	padding: 8px 32px 8px 10px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.dropdown__button:hover{
+	border: 2px solid #FBE0DC;
+}
+.dropdown__button::after {
+	content: url(../../img/user-action/arrow-bottom.svg);
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 7px;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+.dropdown__button--breeds{
+	width: 215px;
+}
+.dropdown__button--limit{
+	width: 110px;
+}
+.dropdown__list {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 52px;
+	border: 2px solid #F8F8F7;
+	overflow: hidden;
+	width: 300px;
+	max-height: 300px;
+	overflow: auto;
+	border-radius: 30px;
+	background: #FFFFFF;
+	z-index: 100;
+}
+.dropdown__list--visible {
+	display: block;
+}
+.dropdown__list-item {
+	padding: 5px 20px 5px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.dropdown__list-item:last-child{
+	margin-bottom: 15px;
+}
+.dropdown__list-item:first-child {
+	margin-top: 15px;
+}
+.dropdown__list-item:hover {
+	background: rgba(176, 198, 225, 0.26);
+}
+.dropdown__input-hidden {
+	display: none;
+}

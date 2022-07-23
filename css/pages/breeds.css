@@ -1,0 +1,26 @@
+.sorting,
+.sorting__icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sorting__item + .sorting__item{
+	margin-left: 10px;
+}
+.sorting__item{
+	padding: 8px 10px;
+	background-color: #F8F8F7;
+	border: 1px solid #F8F8F7;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all .5s ease-out;
+}
+.sorting__item:hover{
+	border: 1px solid #FF868E;
+}
+.sorting__icon path{
+	transition: all .5s ease-out;
+}
+.sorting__item:hover .sorting__icon path{
+	fill: #FF868E;
+}

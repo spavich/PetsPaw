@@ -105,12 +105,24 @@ body{
 	background: #FFD280;
 }
 .red-bg{
+	transition: background-color color .5s ease;
 	color: #FFFFFF;
 	background: #FF868E;
 }
 .red-bg:hover{
 	color: #FFFFFF;
 	background: #FF868E;
+}
+.pink-bg{
+	color: #FF868E;
+	background-color: #FBE0DC;
+}
+.pink-bg path{
+	transition: all .5s ease;
+	fill: #FF868E;
+}
+.pink-bg:hover path{
+	fill: #FFFFFF;
 }
 .menu__body-link{
 	width: 100%;
@@ -124,10 +136,11 @@ body{
 	padding: 10px;
 }
 .right-content{
-	flex: 0 1 680px;
-	min-height: 840px;
+	width: 680px;
 	border-radius: 20px;
 }
 .right-content--pink-bg{
+	width: 680px;
+	height: 840px;
 	background: #FBE0DC;
 }
